@@ -13,6 +13,14 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
+        //添加的文件  2018/2/28 10:24
+        'assetManager' => [
+            'bundles' => [
+                'dmstr\web\AdminLteAsset' => [
+                    'skin' => 'skin-red',
+                ],
+            ],
+        ],
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
@@ -47,4 +55,5 @@ return [
         */
     ],
     'params' => $params,
+
 ];

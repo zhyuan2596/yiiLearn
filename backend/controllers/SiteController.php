@@ -18,7 +18,8 @@ class SiteController extends Controller
     public function behaviors()
     {
         return [
-            'access' => [
+            //2018/2/28 10:28 屏蔽access部分
+            /*'access' => [
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
@@ -31,7 +32,7 @@ class SiteController extends Controller
                         'roles' => ['@'],
                     ],
                 ],
-            ],
+            ],*/
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
